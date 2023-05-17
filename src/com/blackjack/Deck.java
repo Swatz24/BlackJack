@@ -8,12 +8,12 @@ public class Deck {
     private ArrayList<Card> deck;
 
     public Deck() {
-        this.deck = new ArrayList<Card>();
+        this.deck = new ArrayList<>();
     }
 
     public void createFullDeck() {
         // generate cards
-        deck = new ArrayList<Card>();
+        deck = new ArrayList<>();
 
             //Go through all the suits
             for(Suits suit : Suits.values()){
@@ -91,17 +91,17 @@ public class Deck {
         int aces = 0;
 
         for (Card card: deck){
-            switch (card.getValue()){
-                case TWO : totalValue +=2; break;
-                case THREE : totalValue +=3; break;
-                case FOUR:  totalValue +=4; break;
-                case FIVE : totalValue +=5; break;
-                case SIX : totalValue +=6; break;
-                case SEVEN:  totalValue +=7; break;
-                case EIGHT:  totalValue +=8; break;
-                case NINE:  totalValue +=9; break;
-                case TEN, JACK, QUEEN, KING:  totalValue +=10; break;
-                case ACE: aces+=1; break;
+            switch (card.getValue()) {
+                case TWO -> totalValue += 2;
+                case THREE -> totalValue += 3;
+                case FOUR -> totalValue += 4;
+                case FIVE -> totalValue += 5;
+                case SIX -> totalValue += 6;
+                case SEVEN -> totalValue += 7;
+                case EIGHT -> totalValue += 8;
+                case NINE -> totalValue += 9;
+                case TEN, JACK, QUEEN, KING -> totalValue += 10;
+                case ACE -> aces += 1;
             }
         }
         for(int i=0; i< aces;i++){
