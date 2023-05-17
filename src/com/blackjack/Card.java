@@ -14,8 +14,9 @@ public class Card {
     private Random randomSuits = new Random();
 
     public Card(Suits suit, Values value) {
-        this.value = value;
+
         this.suit = suit;
+        this.value = value;
     }
 
     // random card generated
@@ -25,7 +26,7 @@ public class Card {
     }
 
     public String toString() {
-        return this.suit.toString() + "-" + this.value.toString();
+        return this.value.toString() + " of " + this.suit.toString() ;
     }
 
     public Values getValue() {
